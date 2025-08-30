@@ -1,0 +1,11 @@
+{:paths ["resources"]
+
+ :tasks
+ {koan:run    {:doc "Auto-runner: stop at first failure"
+               :task koan-engine.runner/run}
+
+  koan:test   {:doc "Runs the internal tests for the koans (for koans developers!)"
+               :task koan-engine.runner/run-test}
+  
+  koan:random {:doc "Randomly picks a koan to solve (for after you finish the first time)"
+               :task koan-engine.runner/random}}}
